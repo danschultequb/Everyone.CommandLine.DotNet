@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Everyone.CommandLine.DotNet.Tests</RootNamespace>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>False</IsPackable>
+    <IsTestProject>True</IsTestProject>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--<PackageReference Include="everyone.visualstudio.testrunner.csharp" Version="1.0.4" />-->
+    <PackageReference Include="Everyone.TestRunner.VisualStudio.DotNet" Version="1.0.0-dev1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.0" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Everyone.CommandLine.DotNet\Everyone.CommandLine.DotNet.csproj" />
+  </ItemGroup>
+
+</Project>
